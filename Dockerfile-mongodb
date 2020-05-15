@@ -1,0 +1,14 @@
+FROM alpine:3.11
+
+ENV NAME=mongodb
+ENV VERSION=150
+ENV VERSION_LINUX=15
+
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION}_${NAME}_cs_x64.exe
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION}_${NAME}_cs_x86.exe
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION}_${NAME}_cs.dmg
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION}_${NAME}_en_x86.exe
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION}_${NAME}_en_x64.exe
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION}_${NAME}_en.dmg
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION_LINUX}-${NAME}-cs.AppImage
+RUN wget http://download.navicat.com.cn/download/navicat${VERSION_LINUX}-${NAME}-en.AppImage
